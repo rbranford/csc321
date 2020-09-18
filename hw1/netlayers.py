@@ -40,7 +40,7 @@ macos_mac_conv = mac_conv(':')
 # ARP
 # -----------------------------------------------------------------------
 
-arp_ouput_macos = _.partial(getoutput, 'arp -a')
+arp_output_macos = _.partial(getoutput, 'arp -a')
 arp_macos_re = re.compile(
     fr'^(?P<name>[?.\w-]*)\s+\((?P<ip>{ip_re})\) at (?P<mac>.*?) on .*$'
 )
@@ -179,8 +179,12 @@ def arp_table():
     arp_items = get_arp()
     names, ips, macs, companies = _.pipe(
         arp_items,
-        _.map(lambda i: (i['name'], i['ip'], i['mac'],
-                         i['info'].get('company', ''))),
+        _.map(lambda i: (
+            i.get('name', ''),
+            i.get('ip', ''),
+            i.get('mac', ''),
+            i.get('info', {}).get('company', ''),
+        )),
         lambda items: zip(*items),
     )
     max_n, max_i, max_m, max_c = _.pipe(

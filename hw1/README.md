@@ -12,7 +12,19 @@ Start an IPython console (i.e. just type ipython in PowerShell/Termina) in the s
 
 What are the different devices connected to your home network? Can you identify what they are based on this information?
 
-    - There are multiple TV's connected to my home network as well as several verizon devices. Some are identifiable and others are not so easy to identify.  
+    - 192.168.0.1      58:8b:f3:e5:2f:e7  ZyXELCommunications Corporation
+      192.168.0.11     5c:93:a2:8d:91:61  Liteon Technology Corporation
+      192.168.0.37     c0:d2:f3:20:66:ca  Hui Zhou Gaoshengda Technology Co.,LTD
+      192.168.0.70     d8:13:99:66:e0:b5  Hui Zhou Gaoshengda Technology Co.,LTD
+      192.168.0.255    ff:ff:ff:ff:ff:ff
+      224.0.0.22       01:00:5e:00:00:16
+      224.0.0.251      01:00:5e:00:00:fb
+      224.0.0.252      01:00:5e:00:00:fc
+      239.255.255.250  01:00:5e:7f:ff:fa
+      255.255.255.255  ff:ff:ff:ff:ff:ff 
+
+
+      I am unable to identify what any of these are which is probably not a good thing. 
 
 
 LAYER 3: NETWORK
