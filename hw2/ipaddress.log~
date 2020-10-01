@@ -1,0 +1,14 @@
+# IPython log file
+
+# Wed, 30 Sep 2020 21:04:08
+ipaddress.ip_address('192.0.2.1')
+# Wed, 30 Sep 2020 21:05:53
+ipaddress.ip_address('192.168.0.1')
+# Wed, 30 Sep 2020 21:06:03
+ipaddress
+# Wed, 30 Sep 2020 21:06:07
+ip_address
+# Wed, 30 Sep 2020 21:07:53
+ipaddress.ip_network('192.0.2.1/24')
+# Wed, 30 Sep 2020 21:09:12
+ipaddress.ip_address('192.0.2.1')
